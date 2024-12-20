@@ -1,0 +1,6 @@
+@SkyGateApiLayer_HostAddress = http://localhost:5099
+
+GET {{SkyGateApiLayer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

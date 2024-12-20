@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "rv7BqLdzCS+glia8KWknRjB5+j+ogcane2ExH1XekiE=",
+  "Source": "SkyGateApiLayer",
+  "BasePath": "_content/SkyGateApiLayer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
