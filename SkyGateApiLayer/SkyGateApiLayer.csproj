@@ -18,8 +18,4 @@
     <ProjectReference Include="..\SkyGateServiceLayer\SkyGateServiceLayer.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>

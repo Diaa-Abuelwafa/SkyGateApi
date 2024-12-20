@@ -15,7 +15,7 @@ namespace SkyGateDomainLayer.Entities.Identity
         public string HomeAddress { get; set; }
         public string CountryCode { get; set; }
         public string PhoneNumber { get; set; }
-        public string PassporyNumber { get; set; }
+        public string PassportNumber { get; set; }
 
         // ToDo : IQueryable<Reservation>
         // The Relationship With The Reservation Model

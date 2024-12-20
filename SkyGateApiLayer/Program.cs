@@ -5,7 +5,10 @@ using Microsoft.EntityFrameworkCore;
 using SkyGateApiLayer.Middlewares;
 using SkyGateDomainLayer.Entities.Identity;
 using SkyGateDomainLayer.Errors;
+using SkyGateDomainLayer.Interfaces.Identity;
+using SkyGateDomainLayer.Mapping_Profiles;
 using SkyGateRepositoryLayer.Data.Contexts;
+using SkyGateServiceLayer.Services.Identity;
 using System.Net;
 
 namespace SkyGateApiLayer
@@ -45,6 +48,10 @@ namespace SkyGateApiLayer
 
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
                             .AddEntityFrameworkStores<AppDbContext>();
+
+            builder.Services.AddAutoMapper(typeof(MappingProfile));
+
+            builder.Services.AddScoped<IAccountService, AccountService>();
 
             var app = builder.Build();
 

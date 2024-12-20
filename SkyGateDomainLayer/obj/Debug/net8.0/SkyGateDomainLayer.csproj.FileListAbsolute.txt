@@ -10,3 +10,4 @@ D:\Projects\Airline System Project\SkyGateDomainLayer\obj\Debug\net8.0\SkyGateDo
 D:\Projects\Airline System Project\SkyGateDomainLayer\obj\Debug\net8.0\refint\SkyGateDomainLayer.dll
 D:\Projects\Airline System Project\SkyGateDomainLayer\obj\Debug\net8.0\SkyGateDomainLayer.pdb
 D:\Projects\Airline System Project\SkyGateDomainLayer\obj\Debug\net8.0\ref\SkyGateDomainLayer.dll
+D:\Projects\Airline System Project\SkyGateDomainLayer\obj\Debug\net8.0\SkyGateDomainLayer.sourcelink.json

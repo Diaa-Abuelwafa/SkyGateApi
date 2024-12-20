@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "MkYGBc9XDsk=",
+  "dgSpecHash": "uBuWdit+5Mo=",
   "success": true,
   "projectFilePath": "D:\\Projects\\Airline System Project\\SkyGateDomainLayer\\SkyGateDomainLayer.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\metro\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\metro\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\metro\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "C:\\Users\\metro\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.11\\microsoft.aspnetcore.cryptography.internal.8.0.11.nupkg.sha512",

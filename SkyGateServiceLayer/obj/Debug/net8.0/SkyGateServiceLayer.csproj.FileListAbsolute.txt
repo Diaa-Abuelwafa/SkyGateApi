@@ -15,3 +15,4 @@ D:\Projects\Airline System Project\SkyGateServiceLayer\obj\Debug\net8.0\SkyGateS
 D:\Projects\Airline System Project\SkyGateServiceLayer\obj\Debug\net8.0\refint\SkyGateServiceLayer.dll
 D:\Projects\Airline System Project\SkyGateServiceLayer\obj\Debug\net8.0\SkyGateServiceLayer.pdb
 D:\Projects\Airline System Project\SkyGateServiceLayer\obj\Debug\net8.0\ref\SkyGateServiceLayer.dll
+D:\Projects\Airline System Project\SkyGateServiceLayer\obj\Debug\net8.0\SkyGateServiceLayer.sourcelink.json

@@ -13,7 +13,7 @@ namespace SkyGateApiLayer.Controllers
         [HttpGet]
         public IActionResult Error()
         {
-            return NotFound(new ApiErrorResponse((int)HttpStatusCode.NotFound, "NotFound EndPoint"))
+            return NotFound(new ApiErrorResponse((int)HttpStatusCode.NotFound, "NotFound EndPoint"));
         }
     }
 }

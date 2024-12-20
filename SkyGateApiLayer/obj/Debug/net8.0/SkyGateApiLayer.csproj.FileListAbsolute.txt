@@ -156,3 +156,6 @@ D:\Projects\Airline System Project\SkyGateApiLayer\obj\Debug\net8.0\refint\SkyGa
 D:\Projects\Airline System Project\SkyGateApiLayer\obj\Debug\net8.0\SkyGateApiLayer.pdb
 D:\Projects\Airline System Project\SkyGateApiLayer\obj\Debug\net8.0\SkyGateApiLayer.genruntimeconfig.cache
 D:\Projects\Airline System Project\SkyGateApiLayer\obj\Debug\net8.0\ref\SkyGateApiLayer.dll
+D:\Projects\Airline System Project\SkyGateApiLayer\obj\Debug\net8.0\SkyGateApiLayer.sourcelink.json
+D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\AutoMapper.dll
+D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
