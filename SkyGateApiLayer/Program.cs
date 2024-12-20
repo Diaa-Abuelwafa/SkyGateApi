@@ -1,8 +1,12 @@
 
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using SkyGateApiLayer.Middlewares;
 using SkyGateDomainLayer.Entities.Identity;
+using SkyGateDomainLayer.Errors;
 using SkyGateRepositoryLayer.Data.Contexts;
+using System.Net;
 
 namespace SkyGateApiLayer
 {
@@ -19,6 +23,21 @@ namespace SkyGateApiLayer
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            // Configure The Behavior Of The Api Filter For The Validation 
+            builder.Services.Configure<ApiBehaviorOptions>(O =>
+            {
+                O.InvalidModelStateResponseFactory = O =>
+                {
+                    var Errors = O.ModelState.Where(x => x.Value.Errors.Count() > 0)
+                                .SelectMany(x => x.Value.Errors)
+                                .Select(x => x.ErrorMessage).ToList();
+
+                    var Response = new ApiValidationErrorResponse((int)HttpStatusCode.BadRequest, Errors);
+
+                    return new BadRequestObjectResult(Response);
+                };
+            });
+
             builder.Services.AddDbContext<AppDbContext>(O =>
             {
                 O.UseSqlServer(builder.Configuration.GetConnectionString("CS"));
@@ -28,6 +47,9 @@ namespace SkyGateApiLayer
                             .AddEntityFrameworkStores<AppDbContext>();
 
             var app = builder.Build();
+
+            // Handling Exception Middleware
+            app.UseMiddleware<ExceptionMiddleware>();
 
             // Update-Database & SeedData
             using(var Scope = app.Services.CreateScope())
@@ -59,6 +81,7 @@ namespace SkyGateApiLayer
 
             app.UseAuthorization();
 
+            app.UseStatusCodePagesWithReExecute("/api/Error");
 
             app.MapControllers();
 

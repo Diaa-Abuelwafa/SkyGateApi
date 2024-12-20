@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SkyGateDomainLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0fc4753c37322ff8431a971c21e38dc0bba52ca0")]
 [assembly: System.Reflection.AssemblyProductAttribute("SkyGateDomainLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SkyGateDomainLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
