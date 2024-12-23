@@ -1,0 +1,13 @@
+D:\Projects\Airline System Project\SkyGateDomainLayer\bin\Debug\net8.0\SkyGateDomainLayer.deps.json
+D:\Projects\Airline System Project\SkyGateDomainLayer\bin\Debug\net8.0\SkyGateDomainLayer.dll
+D:\Projects\Airline System Project\SkyGateDomainLayer\bin\Debug\net8.0\SkyGateDomainLayer.pdb
+D:\Projects\Airline System Project\SkyGateDomainLayer\obj\Debug\net8.0\SkyGateDomainLayer.csproj.AssemblyReference.cache
+D:\Projects\Airline System Project\SkyGateDomainLayer\obj\Debug\net8.0\SkyGateDomainLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Airline System Project\SkyGateDomainLayer\obj\Debug\net8.0\SkyGateDomainLayer.AssemblyInfoInputs.cache
+D:\Projects\Airline System Project\SkyGateDomainLayer\obj\Debug\net8.0\SkyGateDomainLayer.AssemblyInfo.cs
+D:\Projects\Airline System Project\SkyGateDomainLayer\obj\Debug\net8.0\SkyGateDomainLayer.csproj.CoreCompileInputs.cache
+D:\Projects\Airline System Project\SkyGateDomainLayer\obj\Debug\net8.0\SkyGateDomainLayer.dll
+D:\Projects\Airline System Project\SkyGateDomainLayer\obj\Debug\net8.0\refint\SkyGateDomainLayer.dll
+D:\Projects\Airline System Project\SkyGateDomainLayer\obj\Debug\net8.0\SkyGateDomainLayer.pdb
+D:\Projects\Airline System Project\SkyGateDomainLayer\obj\Debug\net8.0\ref\SkyGateDomainLayer.dll
+D:\Projects\Airline System Project\SkyGateDomainLayer\obj\Debug\net8.0\SkyGateDomainLayer.sourcelink.json

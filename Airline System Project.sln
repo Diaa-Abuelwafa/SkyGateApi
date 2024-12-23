@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyGateDomainLayer", "SkyGateDomainLayer\SkyGateDomainLayer.csproj", "{CF161A04-9F5C-4114-9E75-F036E3101917}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyGateRepositoryLayer", "SkyGateRepositoryLayer\SkyGateRepositoryLayer.csproj", "{053C4922-ADCB-4839-8BC5-D5E4D3087E81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyGateServiceLayer", "SkyGateServiceLayer\SkyGateServiceLayer.csproj", "{AA8C867B-3F8F-48BE-AA43-58BE6DEB30F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyGateApiLayer", "SkyGateApiLayer\SkyGateApiLayer.csproj", "{918445AC-0443-4D16-A720-25993D72CF84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF161A04-9F5C-4114-9E75-F036E3101917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF161A04-9F5C-4114-9E75-F036E3101917}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF161A04-9F5C-4114-9E75-F036E3101917}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF161A04-9F5C-4114-9E75-F036E3101917}.Release|Any CPU.Build.0 = Release|Any CPU
+		{053C4922-ADCB-4839-8BC5-D5E4D3087E81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{053C4922-ADCB-4839-8BC5-D5E4D3087E81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{053C4922-ADCB-4839-8BC5-D5E4D3087E81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{053C4922-ADCB-4839-8BC5-D5E4D3087E81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA8C867B-3F8F-48BE-AA43-58BE6DEB30F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA8C867B-3F8F-48BE-AA43-58BE6DEB30F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA8C867B-3F8F-48BE-AA43-58BE6DEB30F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA8C867B-3F8F-48BE-AA43-58BE6DEB30F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{918445AC-0443-4D16-A720-25993D72CF84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{918445AC-0443-4D16-A720-25993D72CF84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{918445AC-0443-4D16-A720-25993D72CF84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{918445AC-0443-4D16-A720-25993D72CF84}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
