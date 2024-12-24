@@ -16,6 +16,9 @@ using SkyGateServiceLayer.Services.Identity;
 using SkyGateDomainLayer.Mapping_Profiles;
 using SkyGateDomainLayer.Classes;
 using SkyGateServiceLayer.Helpers;
+using StackExchange.Redis;
+using SkyGateDomainLayer.Interfaces.Caching;
+using SkyGateRepositoryLayer.Repositories.Caching;
 
 namespace SkyGateApiLayer
 {
@@ -80,6 +83,8 @@ namespace SkyGateApiLayer
 
             builder.Services.AddScoped<IAccountService, AccountService>();
 
+            builder.Services.AddSingleton<ICachedService, CachedService>();
+
             builder.Services.AddAutoMapper(typeof(MappingProfile));
 
             // Configuration Of CORS Policy
@@ -119,6 +124,14 @@ namespace SkyGateApiLayer
                     ValidAudience = builder.Configuration["Jwt:ConsumerUrl"],
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:SecretKey"]))
                 };
+            });
+
+            // Add Redis Service To The Dependency Injection Container
+            builder.Services.AddSingleton<IConnectionMultiplexer>(O =>
+            {
+                var Connection = builder.Configuration.GetConnectionString("Redis");
+
+                return ConnectionMultiplexer.Connect(Connection);
             });
 
             var app = builder.Build();

@@ -132,5 +132,15 @@
         "StatusCode": 400
       }
     ]
+  },
+  {
+    "ContainingType": "SkyGateApiLayer.Controllers.TestController",
+    "Method": "GetData",
+    "RelativePath": "api/Test",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]
