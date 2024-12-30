@@ -12,7 +12,7 @@ namespace SkyGateRepositoryLayer.Repositories.Specifications
     public class Specification<TEntity, TKey> : ISpecification<TEntity, TKey> where TEntity : BaseEntity<TKey>
     {
         public Expression<Func<TEntity, bool>> Criteria { get ; set ; }
-        public List<Expression<Func<TEntity, object>>> Includes { get ; set ; }
+        public List<Expression<Func<TEntity, object>>> Includes { get; set; } = new List<Expression<Func<TEntity, object>>>();
         public Expression<Func<TEntity, object>> OrderByAsec { get ; set ; }
         public Expression<Func<TEntity, object>> OrderByDsec { get; set; }
         public int Skip { get; set; }

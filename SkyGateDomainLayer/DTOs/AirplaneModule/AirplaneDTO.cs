@@ -1,21 +1,21 @@
-﻿using SkyGateDomainLayer.Entities.BaseEntity;
-using SkyGateDomainLayer.Entities.FlightModule;
+﻿using SkyGateDomainLayer.Entities.FlightModule;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SkyGateDomainLayer.Entities.AirplaneModule
+namespace SkyGateDomainLayer.DTOs.AirplaneModule
 {
-    public class Airplane : BaseEntity<int>
+    public class AirplaneDTO
     {
         public string Model { get; set; }
+        [Required]
         public int NumberOfEconomySeats { get; set; }
         public int NumberOfBusinessSeats { get; set; }
         public int NumberOfFirstClassSeats { get; set; }
         public decimal AdultBaggage { get; set; }
         public decimal ChildBaggage { get; set; }
-        public List<Flight> Flights { get; set; } = new List<Flight>();
     }
 }

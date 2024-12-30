@@ -15,23 +15,21 @@ namespace SkyGateDomainLayer.Entities.FlightModule
         public string CompanyName { get; set; }
         public string DepartureAirportName { get; set; }
         public string ArrivalAirportName { get; set; }
-        public DateOnly DepartureDate { get; set; }
-        public DateOnly ArrivalDate { get; set; }
-        public TimeOnly DepartureTime { get; set; }
-        public TimeOnly ArrivalTime { get; set; }
+        public DateTime DepartureDateTime { get; set; }
+        public DateTime ArrivalDateTime { get; set; }
         public Airplane Airplane { get; set; }
         public int AirplaneId { get; set; }
-        public IEnumerable<int> EconomyToken { get; set; }
-        public IEnumerable<int> BusinessToken { get; set; }
-        public IEnumerable<int> FirstClassToken { get; set; }
+        public List<int> EconomyToken { get; set; } = new List<int>();
+        public List<int> BusinessToken { get; set; } = new List<int>();
+        public List<int> FirstClassToken { get; set; } = new List<int>();
         public decimal AdultPrice { get; set; }
         public decimal ChildPrice { get; set; }
-        public IQueryable<Reservation> Reservations { get; set; }
+        public List<Reservation> Reservations { get; set; } = new List<Reservation>();
 
         public TimeSpan Duration()
         {
-            // Duration.Hours & Duration.Minutes
-            return ArrivalTime - DepartureTime;
+            // TODO
+            return TimeSpan.MaxValue;
         }
 
         // TODO

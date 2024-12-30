@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
+using SkyGateDomainLayer.DTOs.AirplaneModule;
 using SkyGateDomainLayer.DTOs.Identity;
+using SkyGateDomainLayer.Entities.AirplaneModule;
 using SkyGateDomainLayer.Entities.Identity;
 using System;
 using System.Collections.Generic;
@@ -18,6 +20,9 @@ namespace SkyGateDomainLayer.Mapping_Profiles
 
             CreateMap<ApplicationUser, UserDTO>();
             CreateMap<UserDTO, ApplicationUser>();
+
+            CreateMap<Airplane, AirplaneDTO>();
+            CreateMap<AirplaneDTO, Airplane>();
         }
     }
 }

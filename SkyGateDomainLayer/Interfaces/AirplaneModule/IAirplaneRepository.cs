@@ -1,4 +1,5 @@
 ﻿using SkyGateDomainLayer.Entities.AirplaneModule;
+using SkyGateDomainLayer.Entities.BaseEntity;
 using SkyGateDomainLayer.Interfaces.Generic;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,6 @@ namespace SkyGateDomainLayer.Interfaces.AirplaneModule
 {
     public interface IAirplaneRepository : IGenericRepository<Airplane, int>
     {
-        public ICollection<Airplane> GetFree();
+
     }
 }

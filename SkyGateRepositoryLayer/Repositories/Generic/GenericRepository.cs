@@ -19,9 +19,9 @@ namespace SkyGateRepositoryLayer.Repositories.Generic
         {
             this.Context = Context;
         }
-        public IQueryable<TEntity> GetAll(ISpecification<TEntity, TKey> Spec)
+        public List<TEntity> GetAll(ISpecification<TEntity, TKey> Spec)
         {
-            return SpecificationEvaluator.GetQuery<TEntity, TKey>(Context.Set<TEntity>(), Spec);
+            return SpecificationEvaluator.GetQuery<TEntity, TKey>(Context.Set<TEntity>(), Spec).ToList();
         }
 
         public TEntity GetById(ISpecification<TEntity, TKey> Spec)

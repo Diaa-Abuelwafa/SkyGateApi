@@ -20,6 +20,8 @@ using StackExchange.Redis;
 using SkyGateDomainLayer.Interfaces.Caching;
 using SkyGateRepositoryLayer.Repositories.Caching;
 using SkyGateRepositoryLayer.Data.SeedData;
+using SkyGateDomainLayer.Interfaces.AirplaneModule;
+using SkyGateServiceLayer.Services.AirplaneModule;
 
 namespace SkyGateApiLayer
 {
@@ -51,10 +53,11 @@ namespace SkyGateApiLayer
                 {
 
                     // Select The Errors From ModelState
-                    var Errors = Context.ModelState.Where(x => x.Value.Errors.Count() > 0)
-                                                   .SelectMany(x => x.Value.Errors)
-                                                   .Select(x => x.ErrorMessage)
-                                                   .ToList();
+                    var Errors = Context.ModelState
+                        .Where(x => x.Value.Errors.Count > 0)
+                        .SelectMany(x => x.Value.Errors)
+                        .Select(x => x.ErrorMessage)
+                        .ToList();
 
                     // Make The Custom Response 
                     var Response = new ApiValidationErrorResponse((int)HttpStatusCode.BadRequest, Errors);
@@ -134,6 +137,8 @@ namespace SkyGateApiLayer
 
                 return ConnectionMultiplexer.Connect(Connection);
             });
+
+            builder.Services.AddScoped<IAirplaneService, AirplaneService>();
 
             var app = builder.Build();
 

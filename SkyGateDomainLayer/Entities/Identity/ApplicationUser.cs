@@ -17,6 +17,6 @@ namespace SkyGateDomainLayer.Entities.Identity
         public string CountryCode { get; set; }
         public string PhoneNumber { get; set; }
         public string PassportNumber { get; set; }
-        public IQueryable<Reservation> Reservations { get; set; }
+        public List<Reservation> Reservations { get; set; } = new List<Reservation>();
     }
 }
