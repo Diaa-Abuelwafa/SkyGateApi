@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using SkyGateDomainLayer.Entities.ReservationModule;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,8 +17,6 @@ namespace SkyGateDomainLayer.Entities.Identity
         public string CountryCode { get; set; }
         public string PhoneNumber { get; set; }
         public string PassportNumber { get; set; }
-
-        // ToDo : IQueryable<Reservation>
-        // The Relationship With The Reservation Model
+        public IQueryable<Reservation> Reservations { get; set; }
     }
 }

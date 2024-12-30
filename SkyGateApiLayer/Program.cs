@@ -139,7 +139,7 @@ namespace SkyGateApiLayer
             // To Handle Server Error
             app.UseMiddleware<ExceptionMiddleware>();
 
-            // Update The Database(AppDbContext)
+            // Update The Database(AppDbContext) & Seed Data
             using (var Scope = app.Services.CreateScope())
             {
                 var Context = Scope.ServiceProvider.GetRequiredService<AppDbContext>();
@@ -149,6 +149,7 @@ namespace SkyGateApiLayer
                     // Update AppDbContext Database
                     await Context.Database.MigrateAsync();
 
+                    // Seed Data
                 }
                 catch (Exception Ex)
                 {

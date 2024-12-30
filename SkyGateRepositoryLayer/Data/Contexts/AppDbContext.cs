@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using SkyGateDomainLayer.Entities.Airplane;
 using SkyGateDomainLayer.Entities.Identity;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,7 @@ namespace SkyGateRepositoryLayer.Data.Contexts
 {
     public class AppDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Airplane> Airplanes { get; set; }
         public AppDbContext(DbContextOptions Options) : base(Options)
         {
             
