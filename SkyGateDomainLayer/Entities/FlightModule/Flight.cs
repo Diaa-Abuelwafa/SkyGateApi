@@ -13,8 +13,8 @@ namespace SkyGateDomainLayer.Entities.FlightModule
     {
         public int FlightNumber { get; set; }
         public string CompanyName { get; set; }
-        public string DepartureAirport { get; set; }
-        public string ArrivalAirport { get; set; }
+        public string DepartureAirportName { get; set; }
+        public string ArrivalAirportName { get; set; }
         public DateOnly DepartureDate { get; set; }
         public DateOnly ArrivalDate { get; set; }
         public TimeOnly DepartureTime { get; set; }

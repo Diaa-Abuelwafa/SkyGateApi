@@ -19,6 +19,7 @@ using SkyGateServiceLayer.Helpers;
 using StackExchange.Redis;
 using SkyGateDomainLayer.Interfaces.Caching;
 using SkyGateRepositoryLayer.Repositories.Caching;
+using SkyGateRepositoryLayer.Data.SeedData;
 
 namespace SkyGateApiLayer
 {
@@ -150,6 +151,7 @@ namespace SkyGateApiLayer
                     await Context.Database.MigrateAsync();
 
                     // Seed Data
+                    SeedData.Seed(Context);
                 }
                 catch (Exception Ex)
                 {

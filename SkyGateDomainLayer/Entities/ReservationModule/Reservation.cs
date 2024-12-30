@@ -1,4 +1,5 @@
-﻿using SkyGateDomainLayer.Entities.FlightModule;
+﻿using SkyGateDomainLayer.Entities.BaseEntity;
+using SkyGateDomainLayer.Entities.FlightModule;
 using SkyGateDomainLayer.Entities.Identity;
 using SkyGateDomainLayer.Enums.PaymentModule;
 using System;
@@ -9,14 +10,11 @@ using System.Threading.Tasks;
 
 namespace SkyGateDomainLayer.Entities.ReservationModule
 {
-    public class Reservation
+    public class Reservation : BaseEntity<int>
     {
         public ApplicationUser User { get; set; }
-        public int UserId { get; set; }
-        public Flight DepartureFlight { get; set; }
-        public int DepartureFlightId { get; set; }
-        public Flight? ReturnFlight { get; set; }
-        public int? ReturnFlightId { get; set; }
+        public string UserId { get; set; }
+        public IQueryable<Flight> Flights { get; set; }
         public int NumberOfAdults { get; set; }
         public int NumberOfChilds { get; set; }
         public string CabinName { get; set; }

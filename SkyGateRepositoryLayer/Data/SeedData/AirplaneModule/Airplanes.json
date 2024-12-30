@@ -1,0 +1,282 @@
+[
+  {
+    "Model": "Airbus A320",
+    "NumberOfEconomySeats": 15,
+    "NumberOfBusinessSeats": 12,
+    "NumberOfFirstClassSeats": 8,
+    "AdultBaggage": 12.34,
+    "ChildBaggage": 6.78
+  },
+  {
+    "Model": "Boeing 737",
+    "NumberOfEconomySeats": 18,
+    "NumberOfBusinessSeats": 10,
+    "NumberOfFirstClassSeats": 5,
+    "AdultBaggage": 16.45,
+    "ChildBaggage": 7.23
+  },
+  {
+    "Model": "Boeing 777",
+    "NumberOfEconomySeats": 20,
+    "NumberOfBusinessSeats": 7,
+    "NumberOfFirstClassSeats": 4,
+    "AdultBaggage": 14.56,
+    "ChildBaggage": 4.89
+  },
+  {
+    "Model": "Airbus A350",
+    "NumberOfEconomySeats": 10,
+    "NumberOfBusinessSeats": 16,
+    "NumberOfFirstClassSeats": 3,
+    "AdultBaggage": 18.67,
+    "ChildBaggage": 5.34
+  },
+  {
+    "Model": "Boeing 787 Dreamliner",
+    "NumberOfEconomySeats": 13,
+    "NumberOfBusinessSeats": 12,
+    "NumberOfFirstClassSeats": 6,
+    "AdultBaggage": 11.23,
+    "ChildBaggage": 3.45
+  },
+  {
+    "Model": "Airbus A380",
+    "NumberOfEconomySeats": 16,
+    "NumberOfBusinessSeats": 10,
+    "NumberOfFirstClassSeats": 7,
+    "AdultBaggage": 20.56,
+    "ChildBaggage": 6.23
+  },
+  {
+    "Model": "Boeing 767",
+    "NumberOfEconomySeats": 11,
+    "NumberOfBusinessSeats": 9,
+    "NumberOfFirstClassSeats": 5,
+    "AdultBaggage": 14.78,
+    "ChildBaggage": 6.12
+  },
+  {
+    "Model": "Airbus A330",
+    "NumberOfEconomySeats": 17,
+    "NumberOfBusinessSeats": 6,
+    "NumberOfFirstClassSeats": 4,
+    "AdultBaggage": 13.45,
+    "ChildBaggage": 4.56
+  },
+  {
+    "Model": "Boeing 747",
+    "NumberOfEconomySeats": 14,
+    "NumberOfBusinessSeats": 15,
+    "NumberOfFirstClassSeats": 5,
+    "AdultBaggage": 19.23,
+    "ChildBaggage": 5.67
+  },
+  {
+    "Model": "Embraer E175",
+    "NumberOfEconomySeats": 19,
+    "NumberOfBusinessSeats": 7,
+    "NumberOfFirstClassSeats": 4,
+    "AdultBaggage": 12.34,
+    "ChildBaggage": 6.89
+  },
+  {
+    "Model": "Bombardier CRJ900",
+    "NumberOfEconomySeats": 9,
+    "NumberOfBusinessSeats": 10,
+    "NumberOfFirstClassSeats": 5,
+    "AdultBaggage": 15.67,
+    "ChildBaggage": 6.12
+  },
+  {
+    "Model": "Embraer E195",
+    "NumberOfEconomySeats": 13,
+    "NumberOfBusinessSeats": 11,
+    "NumberOfFirstClassSeats": 5,
+    "AdultBaggage": 11.89,
+    "ChildBaggage": 4.34
+  },
+  {
+    "Model": "Boeing 737 MAX 8",
+    "NumberOfEconomySeats": 12,
+    "NumberOfBusinessSeats": 14,
+    "NumberOfFirstClassSeats": 6,
+    "AdultBaggage": 16.45,
+    "ChildBaggage": 6.12
+  },
+  {
+    "Model": "Airbus A321",
+    "NumberOfEconomySeats": 15,
+    "NumberOfBusinessSeats": 9,
+    "NumberOfFirstClassSeats": 6,
+    "AdultBaggage": 17.56,
+    "ChildBaggage": 5.12
+  },
+  {
+    "Model": "Boeing 737-800",
+    "NumberOfEconomySeats": 18,
+    "NumberOfBusinessSeats": 6,
+    "NumberOfFirstClassSeats": 4,
+    "AdultBaggage": 14.23,
+    "ChildBaggage": 5.34
+  },
+  {
+    "Model": "Airbus A319",
+    "NumberOfEconomySeats": 11,
+    "NumberOfBusinessSeats": 8,
+    "NumberOfFirstClassSeats": 5,
+    "AdultBaggage": 18.45,
+    "ChildBaggage": 4.56
+  },
+  {
+    "Model": "Boeing 757",
+    "NumberOfEconomySeats": 17,
+    "NumberOfBusinessSeats": 6,
+    "NumberOfFirstClassSeats": 4,
+    "AdultBaggage": 13.89,
+    "ChildBaggage": 5.67
+  },
+  {
+    "Model": "Airbus A310",
+    "NumberOfEconomySeats": 10,
+    "NumberOfBusinessSeats": 16,
+    "NumberOfFirstClassSeats": 4,
+    "AdultBaggage": 19.67,
+    "ChildBaggage": 6.23
+  },
+  {
+    "Model": "Boeing 767-400",
+    "NumberOfEconomySeats": 16,
+    "NumberOfBusinessSeats": 7,
+    "NumberOfFirstClassSeats": 5,
+    "AdultBaggage": 14.23,
+    "ChildBaggage": 4.78
+  },
+  {
+    "Model": "Bombardier Q400",
+    "NumberOfEconomySeats": 12,
+    "NumberOfBusinessSeats": 13,
+    "NumberOfFirstClassSeats": 5,
+    "AdultBaggage": 16.45,
+    "ChildBaggage": 6.12
+  },
+  {
+    "Model": "Embraer ERJ 145",
+    "NumberOfEconomySeats": 14,
+    "NumberOfBusinessSeats": 9,
+    "NumberOfFirstClassSeats": 7,
+    "AdultBaggage": 13.67,
+    "ChildBaggage": 5.23
+  },
+  {
+    "Model": "Airbus A220",
+    "NumberOfEconomySeats": 18,
+    "NumberOfBusinessSeats": 8,
+    "NumberOfFirstClassSeats": 5,
+    "AdultBaggage": 15.78,
+    "ChildBaggage": 4.56
+  },
+  {
+    "Model": "Boeing 787-9",
+    "NumberOfEconomySeats": 13,
+    "NumberOfBusinessSeats": 10,
+    "NumberOfFirstClassSeats": 5,
+    "AdultBaggage": 17.45,
+    "ChildBaggage": 5.67
+  },
+  {
+    "Model": "Airbus A350-900",
+    "NumberOfEconomySeats": 11,
+    "NumberOfBusinessSeats": 12,
+    "NumberOfFirstClassSeats": 7,
+    "AdultBaggage": 19.23,
+    "ChildBaggage": 6.89
+  },
+  {
+    "Model": "Boeing 737 MAX 9",
+    "NumberOfEconomySeats": 10,
+    "NumberOfBusinessSeats": 15,
+    "NumberOfFirstClassSeats": 5,
+    "AdultBaggage": 16.78,
+    "ChildBaggage": 5.34
+  },
+  {
+    "Model": "Boeing 777X",
+    "NumberOfEconomySeats": 12,
+    "NumberOfBusinessSeats": 9,
+    "NumberOfFirstClassSeats": 6,
+    "AdultBaggage": 14.89,
+    "ChildBaggage": 5.67
+  },
+  {
+    "Model": "Airbus A321neo",
+    "NumberOfEconomySeats": 17,
+    "NumberOfBusinessSeats": 7,
+    "NumberOfFirstClassSeats": 4,
+    "AdultBaggage": 13.67,
+    "ChildBaggage": 6.12
+  },
+  {
+    "Model": "Boeing 777-200ER",
+    "NumberOfEconomySeats": 14,
+    "NumberOfBusinessSeats": 6,
+    "NumberOfFirstClassSeats": 5,
+    "AdultBaggage": 16.45,
+    "ChildBaggage": 4.23
+  },
+  {
+    "Model": "Airbus A330neo",
+    "NumberOfEconomySeats": 18,
+    "NumberOfBusinessSeats": 7,
+    "NumberOfFirstClassSeats": 5,
+    "AdultBaggage": 12.34,
+    "ChildBaggage": 5.23
+  },
+  {
+    "Model": "Boeing 757-200",
+    "NumberOfEconomySeats": 13,
+    "NumberOfBusinessSeats": 11,
+    "NumberOfFirstClassSeats": 6,
+    "AdultBaggage": 17.67,
+    "ChildBaggage": 6.12
+  },
+  {
+    "Model": "Boeing 727",
+    "NumberOfEconomySeats": 12,
+    "NumberOfBusinessSeats": 9,
+    "NumberOfFirstClassSeats": 4,
+    "AdultBaggage": 14.23,
+    "ChildBaggage": 5.45
+  },
+  {
+    "Model": "Airbus A340",
+    "NumberOfEconomySeats": 15,
+    "NumberOfBusinessSeats": 8,
+    "NumberOfFirstClassSeats": 4,
+    "AdultBaggage": 18.45,
+    "ChildBaggage": 6.67
+  },
+  {
+    "Model": "Boeing 757-300",
+    "NumberOfEconomySeats": 16,
+    "NumberOfBusinessSeats": 10,
+    "NumberOfFirstClassSeats": 5,
+    "AdultBaggage": 13.56,
+    "ChildBaggage": 5.78
+  },
+  {
+    "Model": "Airbus A330-800",
+    "NumberOfEconomySeats": 14,
+    "NumberOfBusinessSeats": 9,
+    "NumberOfFirstClassSeats": 5,
+    "AdultBaggage": 16.12,
+    "ChildBaggage": 5.34
+  },
+  {
+    "Model": "Boeing 737-900",
+    "NumberOfEconomySeats": 17,
+    "NumberOfBusinessSeats": 8,
+    "NumberOfFirstClassSeats": 6,
+    "AdultBaggage": 15.23,
+    "ChildBaggage": 5.12
+  }
+]
