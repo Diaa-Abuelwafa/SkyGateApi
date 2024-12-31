@@ -4304,7 +4304,6 @@
       "MailKit >= 4.9.0",
       "MimeKit >= 4.9.0",
       "SkyGateRepositoryLayer >= 1.0.0",
-      "Stripe.net >= 47.2.0",
       "Twilio >= 7.8.0"
     ]
   },
@@ -4369,10 +4368,6 @@
           "MimeKit": {
             "target": "Package",
             "version": "[4.9.0, )"
-          },
-          "Stripe.net": {
-            "target": "Package",
-            "version": "[47.2.0, )"
           },
           "Twilio": {
             "target": "Package",

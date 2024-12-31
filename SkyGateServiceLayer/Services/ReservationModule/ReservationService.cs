@@ -37,7 +37,6 @@ namespace SkyGateServiceLayer.Services.ReservationModule
             var User = await UserManager.FindByEmailAsync(Email);
 
             ReservationObject.UserId = User.Id;
-            ReservationObject.Flights = new List<Flight>();
             ReservationObject.Flights[0].Id = Reservation.DepartureFlightId;
             ReservationObject.Flights[1].Id = Reservation.ReturnFlightId;
             ReservationObject.NumberOfAdults = Reservation.NumberOfAdults;

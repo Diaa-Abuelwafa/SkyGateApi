@@ -1996,7 +1996,6 @@
           "MailKit": "4.9.0",
           "MimeKit": "4.9.0",
           "SkyGateRepositoryLayer": "1.0.0",
-          "Stripe.net": "47.2.0",
           "Twilio": "7.8.0"
         },
         "compile": {
@@ -5964,6 +5963,7 @@
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.11",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.11",
       "SkyGateServiceLayer >= 1.0.0",
+      "Stripe.net >= 47.2.0",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
   },
@@ -6030,6 +6030,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[8.0.11, )"
+          },
+          "Stripe.net": {
+            "target": "Package",
+            "version": "[47.2.0, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

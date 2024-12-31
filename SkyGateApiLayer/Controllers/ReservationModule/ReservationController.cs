@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SkyGateDomainLayer.DTOs.ReservationModule;
 using SkyGateDomainLayer.Entities.ReservationModule;
@@ -21,6 +22,7 @@ namespace SkyGateApiLayer.Controllers.ReservationModule
         }
 
         [HttpGet]
+        [Authorize]
         [ProducesResponseType(typeof(List<ReservationResponseDTO>), (int)HttpStatusCode.OK)]
         public IActionResult GetAllReservationForCurrentUser()
         {
@@ -32,6 +34,7 @@ namespace SkyGateApiLayer.Controllers.ReservationModule
         }
 
         [HttpGet("{Id:int}")]
+        [Authorize(Roles = "admin")]
         [ProducesResponseType(typeof(ReservationResponseDTO), (int)HttpStatusCode.OK)]
         [ProducesResponseType(typeof(ApiErrorResponse), (int)HttpStatusCode.NotFound)]
         public IActionResult GetReservationById(int Id)
@@ -48,6 +51,7 @@ namespace SkyGateApiLayer.Controllers.ReservationModule
 
         [HttpPost]
         [ProducesResponseType((int)HttpStatusCode.Created)]
+        [Authorize]
         [ProducesResponseType(typeof(ApiValidationErrorResponse), (int)HttpStatusCode.BadRequest)]
         public async Task<IActionResult> AddReservation(ReservationCreateDTO Reservation)
         {
@@ -68,9 +72,10 @@ namespace SkyGateApiLayer.Controllers.ReservationModule
             return BadRequest(new ApiValidationErrorResponse((int)HttpStatusCode.BadRequest));
         }
 
-        [HttpPost]
+        [HttpPost("update")]
         [ProducesResponseType((int)HttpStatusCode.Created)]
         [ProducesResponseType(typeof(ApiValidationErrorResponse), (int)HttpStatusCode.BadRequest)]
+        [Authorize]
         public async Task<IActionResult> UpdateReservation(ReservationCreateDTO Reservation)
         {
             var Email = User.FindFirstValue(ClaimTypes.Email);
@@ -92,6 +97,7 @@ namespace SkyGateApiLayer.Controllers.ReservationModule
 
         [HttpDelete]
         [Route("{Id:int}")]
+        [Authorize]
         public IActionResult DeleteReservation(int Id)
         {
             var Result = ReservationService.DeleteReservation(Id);

@@ -220,10 +220,6 @@
               "target": "Package",
               "version": "[4.9.0, )"
             },
-            "Stripe.net": {
-              "target": "Package",
-              "version": "[47.2.0, )"
-            },
             "Twilio": {
               "target": "Package",
               "version": "[7.8.0, )"

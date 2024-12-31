@@ -494,6 +494,32 @@
     ]
   },
   {
+    "ContainingType": "SkyGateApiLayer.Controllers.PaymentModule.PaymentController",
+    "Method": "CreateOrUpdatePaymentIntent",
+    "RelativePath": "api/Payment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ReservationId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SkyGateApiLayer.Controllers.PaymentModule.PaymentController",
+    "Method": "WebhockEndPoint",
+    "RelativePath": "api/Payment/webhock",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SkyGateApiLayer.Controllers.ReservationModule.ReservationController",
     "Method": "GetAllReservationForCurrentUser",
     "RelativePath": "api/Reservation",
@@ -576,6 +602,53 @@
           "text/json"
         ],
         "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "SkyGateApiLayer.Controllers.ReservationModule.ReservationController",
+    "Method": "DeleteReservation",
+    "RelativePath": "api/Reservation/{Id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SkyGateApiLayer.Controllers.ReservationModule.ReservationController",
+    "Method": "UpdateReservation",
+    "RelativePath": "api/Reservation/update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Reservation",
+        "Type": "SkyGateDomainLayer.DTOs.ReservationModule.ReservationCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      },
+      {
+        "Type": "SkyGateDomainLayer.Errors.ApiValidationErrorResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
       }
     ]
   }
