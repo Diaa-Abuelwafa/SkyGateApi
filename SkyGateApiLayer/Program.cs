@@ -25,6 +25,10 @@ using SkyGateServiceLayer.Services.AirplaneModule;
 using SkyGateDomainLayer.Interfaces.FlightModule;
 using SkyGateRepositoryLayer.Repositories.FlightModule;
 using SkyGateServiceLayer.Services.FlightRepository;
+using SkyGateDomainLayer.Interfaces.ReservationModule;
+using SkyGateServiceLayer.Services.ReservationModule;
+using SkyGateDomainLayer.Interfaces.PaymentModule;
+using SkyGateServiceLayer.Services.PaymentModule;
 
 namespace SkyGateApiLayer
 {
@@ -144,6 +148,10 @@ namespace SkyGateApiLayer
             builder.Services.AddScoped<IAirplaneService, AirplaneService>();
 
             builder.Services.AddScoped<IFlightService, FlightService>();
+
+            builder.Services.AddScoped<IReservationService, ReservationService>();
+
+            builder.Services.AddScoped<IPaymentService, PaymentService>();
 
             var app = builder.Build();
 

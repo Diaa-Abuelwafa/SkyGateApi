@@ -22,11 +22,12 @@ namespace SkyGateDomainLayer.Entities.ReservationModule
         public string? PaymentIntentId { get; set; }
         public string? ClientSecret { get; set; }
         public PaymentStatus Status { get; set; } = PaymentStatus.Pending;
-
-        // TODO
         public decimal TotalPrice()
         {
-            return 0;
+            var TotalPrice01 = Flights[0].AdultPrice * NumberOfAdults + Flights[0].ChildPrice * NumberOfChilds;
+            var TotalPrice02 = Flights[1].AdultPrice * NumberOfAdults + Flights[1].ChildPrice * NumberOfChilds;
+
+            return TotalPrice01 + TotalPrice02;
         }
 
     }

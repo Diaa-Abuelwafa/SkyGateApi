@@ -42,7 +42,6 @@ D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\Microsoft.Id
 D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\Microsoft.OpenApi.dll
 D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
-D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\Mono.TextTemplating.dll
 D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -55,13 +54,10 @@ D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\System.Compo
 D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\System.Composition.Runtime.dll
 D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\System.Composition.TypedParts.dll
 D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
-D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\System.Drawing.Common.dll
 D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\System.Memory.Data.dll
 D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\System.Runtime.Caching.dll
 D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
-D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\System.Security.Permissions.dll
-D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\System.Windows.Extensions.dll
 D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
 D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
 D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -120,12 +116,7 @@ D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\runtimes\win
 D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\SkyGateDomainLayer.dll
 D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\SkyGateRepositoryLayer.dll
 D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\SkyGateServiceLayer.dll
@@ -168,3 +159,4 @@ D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\Newtonsoft.J
 D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\Twilio.dll
 D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
 D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\StackExchange.Redis.dll
+D:\Projects\Airline System Project\SkyGateApiLayer\bin\Debug\net8.0\Stripe.net.dll

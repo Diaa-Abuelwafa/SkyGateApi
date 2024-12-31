@@ -1,5 +1,6 @@
 ﻿using SkyGateDomainLayer.Interfaces.AirplaneModule;
 using SkyGateDomainLayer.Interfaces.FlightModule;
+using SkyGateDomainLayer.Interfaces.ReservationModule;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,7 @@ namespace SkyGateDomainLayer.Interfaces.UnitOfWork
     {
         public IAirplaneRepository AirplaneRepository();
         public IFlightRepository FlightRepository();
+        public IReservationRepository ReservationRepository();
         public int SaveChanges();
     }
 }
