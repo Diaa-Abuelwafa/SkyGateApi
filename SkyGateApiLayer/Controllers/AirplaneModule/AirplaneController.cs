@@ -69,12 +69,12 @@ namespace SkyGateApiLayer.Controllers.AirplaneModule
             return BadRequest(new ApiErrorResponse((int)HttpStatusCode.BadRequest));
         }
 
-        [HttpPut]
+        [HttpPut("{Id:int}")]
         [ProducesResponseType(typeof(AirplaneDTO), (int)HttpStatusCode.Created)]
         [ProducesResponseType(typeof(ApiValidationErrorResponse), (int)HttpStatusCode.BadRequest)]
-        public IActionResult UpdateAirplane(AirplaneDTO Airplane)
+        public IActionResult UpdateAirplane(int Id, AirplaneDTO Airplane)
         {
-            int Result = AirplaneService.UpdateAirplane(Airplane);
+            int Result = AirplaneService.UpdateAirplane(Id, Airplane);
 
             if (Result > 0)
             {

@@ -1,5 +1,4 @@
 ﻿using SkyGateDomainLayer.Entities.AirplaneModule;
-using SkyGateDomainLayer.Entities.BaseEntity;
 using SkyGateDomainLayer.Entities.ReservationModule;
 using System;
 using System.Collections.Generic;
@@ -7,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SkyGateDomainLayer.Entities.FlightModule
+namespace SkyGateDomainLayer.DTOs.FlightModule
 {
-    public class Flight : BaseEntity<int>
+    public class FlightDTO
     {
         public int FlightNumber { get; set; }
         public string CompanyName { get; set; }
@@ -17,30 +16,12 @@ namespace SkyGateDomainLayer.Entities.FlightModule
         public string ArrivalAirportName { get; set; }
         public DateTime DepartureDateTime { get; set; }
         public DateTime ArrivalDateTime { get; set; }
-        public Airplane Airplane { get; set; }
         public int AirplaneId { get; set; }
         public List<int> EconomyToken { get; set; } = new List<int>();
         public List<int> BusinessToken { get; set; } = new List<int>();
         public List<int> FirstClassToken { get; set; } = new List<int>();
         public decimal AdultPrice { get; set; }
         public decimal ChildPrice { get; set; }
-        public List<Reservation> Reservations { get; set; } = new List<Reservation>();
-
-        public TimeSpan Duration()
-        {
-            return ArrivalDateTime - DepartureDateTime;
-        }
-
-        public bool IsFull()
-        {
-            if( Airplane.NumberOfBusinessSeats == BusinessToken.Count() &&
-                Airplane.NumberOfEconomySeats == EconomyToken.Count() &&
-                Airplane.NumberOfFirstClassSeats == FirstClassToken.Count() )
-            {
-                return true;
-            }
-
-            return false;
-        }
+        public TimeSpan Duration { get; set; }
     }
 }

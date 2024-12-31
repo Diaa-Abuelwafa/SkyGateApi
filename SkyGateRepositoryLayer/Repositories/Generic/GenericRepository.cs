@@ -33,9 +33,13 @@ namespace SkyGateRepositoryLayer.Repositories.Generic
             Context.Add(Item);
         }
 
-        public void Update(TEntity Item)
+        public void Update(TKey Id, TEntity Item)
         {
-            Context.Update(Item);
+            var Entity = Context.Set<TEntity>().Find(Id);
+
+            Entity = Item;
+
+            Context.Update(Entity);
         }
 
         public void Delete(TKey Id)

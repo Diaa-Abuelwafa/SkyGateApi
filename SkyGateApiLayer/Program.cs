@@ -22,6 +22,9 @@ using SkyGateRepositoryLayer.Repositories.Caching;
 using SkyGateRepositoryLayer.Data.SeedData;
 using SkyGateDomainLayer.Interfaces.AirplaneModule;
 using SkyGateServiceLayer.Services.AirplaneModule;
+using SkyGateDomainLayer.Interfaces.FlightModule;
+using SkyGateRepositoryLayer.Repositories.FlightModule;
+using SkyGateServiceLayer.Services.FlightRepository;
 
 namespace SkyGateApiLayer
 {
@@ -139,6 +142,8 @@ namespace SkyGateApiLayer
             });
 
             builder.Services.AddScoped<IAirplaneService, AirplaneService>();
+
+            builder.Services.AddScoped<IFlightService, FlightService>();
 
             var app = builder.Build();
 

@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
 using SkyGateDomainLayer.DTOs.AirplaneModule;
+using SkyGateDomainLayer.DTOs.FlightModule;
 using SkyGateDomainLayer.DTOs.Identity;
 using SkyGateDomainLayer.Entities.AirplaneModule;
+using SkyGateDomainLayer.Entities.FlightModule;
 using SkyGateDomainLayer.Entities.Identity;
 using System;
 using System.Collections.Generic;
@@ -23,6 +25,12 @@ namespace SkyGateDomainLayer.Mapping_Profiles
 
             CreateMap<Airplane, AirplaneDTO>();
             CreateMap<AirplaneDTO, Airplane>();
+
+            CreateMap<Flight, FlightDTO>();
+            CreateMap<FlightDTO, Flight>();
+
+            CreateMap<FlightCreateDTO, Flight>();
+            CreateMap<Flight, FlightCreateDTO>();
         }
     }
 }

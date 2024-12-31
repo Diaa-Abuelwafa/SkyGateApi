@@ -88,11 +88,11 @@ namespace SkyGateServiceLayer.Services.AirplaneModule
             return Airplanes;
         }
 
-        public int UpdateAirplane(AirplaneDTO Airplane)
+        public int UpdateAirplane(int Id, AirplaneDTO Airplane)
         {
             var AirplaneToDB = Mapper.Map<Airplane>(Airplane);
 
-            UnitOfWork.AirplaneRepository().Update(AirplaneToDB);
+            UnitOfWork.AirplaneRepository().Update(Id, AirplaneToDB);
 
             return UnitOfWork.SaveChanges();
         }

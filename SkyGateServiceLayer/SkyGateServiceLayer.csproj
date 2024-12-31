@@ -16,4 +16,9 @@
     <ProjectReference Include="..\SkyGateRepositoryLayer\SkyGateRepositoryLayer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Services\NewFolder1\" />
+    <Folder Include="Services\NewFolder\" />
+  </ItemGroup>
+
 </Project>

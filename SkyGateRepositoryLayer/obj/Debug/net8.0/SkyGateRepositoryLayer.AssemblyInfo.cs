@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SkyGateRepositoryLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1daf5f8dd54adc6e71f8ea3f7b75166bf34115e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+135a4d8f2e8d9b1e52b4b6594f4c4b32b1510c1a")]
 [assembly: System.Reflection.AssemblyProductAttribute("SkyGateRepositoryLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SkyGateRepositoryLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

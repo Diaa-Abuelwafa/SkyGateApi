@@ -15,7 +15,7 @@ namespace SkyGateDomainLayer.Interfaces.AirplaneModule
         public List<AirplaneDTO> GetAllFreeAirplanes();
         public AirplaneDTO GetAirplaneById(int AirplaneId);
         public int AddAirplane(AirplaneDTO Airplane);
-        public int UpdateAirplane(AirplaneDTO Airplane);
+        public int UpdateAirplane(int Id, AirplaneDTO Airplane);
         public int DeleteAirplane(int AirplaneId);
     }
 }

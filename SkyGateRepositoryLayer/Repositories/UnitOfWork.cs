@@ -1,7 +1,9 @@
 ﻿using SkyGateDomainLayer.Interfaces.AirplaneModule;
+using SkyGateDomainLayer.Interfaces.FlightModule;
 using SkyGateDomainLayer.Interfaces.UnitOfWork;
 using SkyGateRepositoryLayer.Data.Contexts;
 using SkyGateRepositoryLayer.Repositories.AirplaneModule;
+using SkyGateRepositoryLayer.Repositories.FlightModule;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +15,8 @@ namespace SkyGateRepositoryLayer.Repositories
     public class UnitOfWork : IUnitOfWork
     {
         private readonly AppDbContext Context;
-        private AirplaneRepository _AirplaneRepository;
+        private IAirplaneRepository _AirplaneRepository;
+        private IFlightRepository _FlightRepository;
         public UnitOfWork(AppDbContext Context)
         {
             this.Context = Context;
@@ -27,6 +30,16 @@ namespace SkyGateRepositoryLayer.Repositories
             }
 
             return _AirplaneRepository;
+        }
+
+        public IFlightRepository FlightRepository()
+        {
+            if(_FlightRepository is null)
+            {
+                _FlightRepository = new FlightRepository(Context);
+            }
+
+            return _FlightRepository;
         }
 
         public int SaveChanges()
